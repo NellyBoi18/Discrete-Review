@@ -13,6 +13,8 @@ public class HelloWorld {
             names[x] = nameIN; // Storing names in the array
         }
 
+        in.close(); // Closing Scanner so no memory leak
+
         // Outputting Hello, names[x]!
         for (int x = 0; x < names.length; x++) {
             System.out.println("Hello, " + names[x] + "!");
